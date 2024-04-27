@@ -9,7 +9,7 @@ input.onButtonPressed(Button.AB, function () {
     music.play(music.stringPlayable("C5 B A G F E D C ", 120), music.PlaybackMode.UntilDone)
     bitbot.buzz(false)
     bitbot.goms(BBDirection.Reverse, 60, 300)
-    bitbot.goms(BBDirection.Forward, 60, 300)
+    bitbot.goms(BBDirection.Forward, 60, 400)
     bitbot.rotatems(BBRobotDirection.Left, 60, 400)
     bitbot.rotatems(BBRobotDirection.Right, 60, 200)
     bitbot.rotate(BBRobotDirection.Left, 60)
@@ -25,7 +25,7 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Heart)
-    basic.showString("" + (randint(1, 10)))
+    basic.showString("" + (randint(1, 6)))
 })
 bitbot.select_model(BBModel.XL)
 basic.forever(function () {
